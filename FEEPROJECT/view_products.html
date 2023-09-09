@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>View Products</title>
+  </head>
+  <body>
+    <div class="container">
+      <a
+        href="./index.html"
+        style="
+          text-align: center;
+          display: flex;
+          justify-content: center;
+          font-weight: 800;
+          color: rgb(0, 45, 45);
+          text-decoration: none;
+        "
+        >BACK</a
+      >
+      <h1>Products Inventory</h1>
+      <div id="totalAmount" style="font-weight: 800; text-align: center">
+        Total Amount: Rs 0.00
+      </div>
+
+      <table id="inventoryTable">
+        <thead>
+          <tr>
+            <th>Product Name</th>
+            <th>Quantity</th>
+            <th>Product ID</th>
+            <th>Price</th>
+            <th>Date Added</th>
+            <th>Total Amount</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="inventoryList">
+          <h2>In Stock</h2>
+          <!-- Inventory items will be displayed here -->
+        </tbody>
+      </table>
+    </div>
+
+    <div class="stockout">
+      <!-- Add this table to display deleted products -->
+      <h2>Out of stock Products</h2>
+      <button id="removeAllDeleted">Remove All Deleted Products</button>
+      <table id="deletedProductsTable">
+        <thead>
+          <tr>
+            <th>Product Name</th>
+            <th>Quantity</th>
+            <th>Product ID</th>
+            <th>Price</th>
+            <th>Date Added</th>
+          </tr>
+        </thead>
+        <tbody id="deletedProductsList">
+          <!-- Deleted products will be displayed here -->
+        </tbody>
+      </table>
+    </div>
+
+    <script src="view_products.js"></script>
+  </body>
+</html>
